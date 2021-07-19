@@ -55,7 +55,7 @@ Looking under 'Deployed Contracts', there will be 3 contracts deployed now.
 ![1st_transaction_1000wei](Images/17.testingtransactionwithnewaddress.jpg)  
 We are now going to make 3 transactions to the PupperCoinCrowdsale contract address.  
 Each transaction will originate from 3 separate wallet addresses.  
-In thise case, the cap and goal is 10000 wei, so 3 separate transactions of 1000, 7000, 2000 wei will be made.  
+In this case, the cap and goal is 10000 wei, so 3 separate transactions of 1000, 7000, 2000 wei will be made.  
 The green circle shows the 1st wallet address which will be sending 1000 wei to the contract..
 
 ![metamask_showing_contract](Images/18.2ndwallet_to_crowdsale_contract.jpg)  
