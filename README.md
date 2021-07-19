@@ -56,13 +56,13 @@ Looking under 'Deployed Contracts', there will be 3 contracts deployed now.
 We are now going to make 3 transactions to the PupperCoinCrowdsale contract address.  
 Each transaction will originate from 3 separate wallet addresses.  
 In this case, the cap and goal is 10000 wei, so 3 separate transactions of 1000, 7000, 2000 wei will be made.  
-The green circle shows the 1st wallet address which will be sending 1000 wei to the contract..
+The green circle shows the 1st wallet address which will be sending 1000 wei to the contract.
 
 ![metamask_showing_contract](Images/18.2ndwallet_to_crowdsale_contract.jpg)  
 Sending 1000 wei. As seen in Metamask pop-up.  
 
 ![0pupascontractnotfinalised](Images/19.0PUPinMetamask_1000PUPincontract_asgoalnotmetyet.jpg)  
-Made a call using the call function to check the wallet balance. In this case,m in the green circle, 1000 turns up. Which shows 1000 wei has been sent from the wallet to the contract. As the contract has not been finalised yet, then the wallet in Metamask will still show 0 pup.
+Made a call using the call function to check the wallet balance. In this case, in the green circle, 1000 turns up. Which shows 1000 wei has been sent from the wallet to the contract. As the contract has not been finalised yet, then the wallet in Metamask will still show 0 pup.
 
 ![error_sending_from_metamask_to_contract](Images/20.metsamask_transaction_not_going_through.jpg)  
 Instead of clicking 'Transact' in Remix for the next transaction, I tried sending a normal ETH transaction via Metamask, from another wallet address to the crowdsale address, in this case trying to send 7000 wei. However Metamask did not allow the transaction to proceed, see the 'NEXT' button which is constantly being greyed out. I reverted to using Remix again for this activity.  
@@ -72,7 +72,7 @@ Made the 2nd transaction of 7000 wei from another wallet address. Using the same
 
 ![etherscan_proof](Images/22.7000wei_from3rdwallet_tocrowdsaleaddress.jpg)  
 Transaction seen on Etherscan.
-As a reminder:
+As a reminder:  
 1st wallet address: Initial Metamask wallet used to connect to Remix via Web 3  
 2nd wallet address: Metamask wallet used to send 1000 wei to Crowdsale smart contract address  
 3rd wallet address: Metamask wallet used to send 7000 wei to Crowdsale smart contract address  
@@ -85,7 +85,7 @@ In Remix, it shows 8000 wei raised from the two transactions so far. 1000 wei + 
 As the cap was 10000 wei, and we have a total of 8000 wei in the smart contract so far, I tried a transaction of 2050 wei. Which as expected, could not go through.  
 
 ![error_shown_remix](Images/25.failedtransaction.jpg)  
-Fialed transaction as expected, seen in Remix.
+Failed transaction as expected, seen in Remix.
 
 ![cap_reached_success](Images/26.successful_transaction_cap_reached.jpg)  
 This is the last transaction.  
@@ -100,7 +100,7 @@ Testing the contract by sending more wei will result in an error as expected.
 ![fast_forward_erro](Images/29.despitechangingfastforwardto25weeks_stillerror.jpg)  
 One error I ran into, was using close time as now += 24 weeks in the inital code. Hence crowdsale smart contract 'isOpen' always returned a 'true' value, which meant we could not finalise the smart contract.  
 There were two ways to rectify this.  
-1. Using fakenow and a fast forward function, in this case I fastwarded 25 weeks, when the closign time is 24 weeks.  
+1. Using fakenow and a fast forward function, in this case I fastwarded 25 weeks, when the closing time is 24 weeks.  
 I was unable to get this method to work though.
 2. The second method was to change the close time to now + 10 minutes. More described in the next slide.  
 
@@ -111,7 +111,7 @@ Looking at the next slide, the difference in the opening and closing time is 600
 The finalisation button on the crowdsale contract can finally be clicked, and the transaction seen on Etherscan.  
 
 ![issues](Images/32.issues_adding_on_metamask.jpg)  
-There were issues adding the PUP token to Metamask, and despite tryign several avenues, I still could not get it to work.  
+There were issues adding the PUP token to Metamask, and despite trying several avenues, I still could not get it to work.  
 
 ---------------------------------------------------
 ## The following part of this readme represents the technical Instructions for completing the task.
