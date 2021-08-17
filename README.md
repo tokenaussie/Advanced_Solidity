@@ -1,4 +1,4 @@
-# Unit 21: You sure can attract a crowd! (Advanced Solidity)
+# You sure can attract a crowd! (Advanced Solidity)
 
 ![crowd](Images/crowd.jpg)
 _People in Concert - Photo by [Josh Sorenson](https://www.pexels.com/@joshsorenson?utm_content=attributionCopyText&utm_medium=referral&utm_source=pexels) | [Free License](https://www.pexels.com/license/)_
